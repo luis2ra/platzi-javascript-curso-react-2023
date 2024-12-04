@@ -11,7 +11,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://platzi.com/reactjs"
+          href="https://platzi.com/cursos/react/"
           target="_blank"
           rel="noopener noreferrer"
         >
