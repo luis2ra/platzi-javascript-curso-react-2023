@@ -16,3 +16,15 @@ function CreateTodoButton() {
 }
 
 export { CreateTodoButton };
+
+
+// otra forma de hacerlo
+function MiBoton() {
+  function manejarClick() {
+    alert("¡Botón clickeado!");
+  }
+
+  return <button onClick={manejarClick}>Haz clic</button>;
+}
+
+export { MiBoton };

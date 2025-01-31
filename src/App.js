@@ -1,9 +1,9 @@
 import React from 'react';
 import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
+import { InputEjemplo, TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItem';
-import { CreateTodoButton } from './CreateTodoButton';
+import { CreateTodoButton, MiBoton } from './CreateTodoButton';
 
 const defaultTodos = [
   { text: 'Cortar cebolla', completed: true },
@@ -29,6 +29,10 @@ function App() {
       </TodoList>
       
       <CreateTodoButton />
+
+      <MiBoton />
+      <br />
+      <InputEjemplo />
     </>
   );
 }

@@ -16,3 +16,15 @@ function TodoSearch() {
 }
 
 export { TodoSearch };
+
+
+// Otra forma de hacerlo
+function InputEjemplo() {
+  function manejarCambio(evento) {
+    console.log("Valor del input:", evento.target.value);
+  }
+
+  return <input type="text" onChange={manejarCambio} />;
+}
+
+export { InputEjemplo };
