@@ -22,13 +22,20 @@ function App() {
   ).length;
   const totalTodos = todos.length;
 
-  const searchedTodos = todos.filter(
-    (todo) => {
-      const todoText = todo.text.toLowerCase();
-      const searchText = searchValue.toLowerCase();
-      return todoText.includes(searchText);
-    }
+  /* opcion 1: optimizando el codigo */
+  const searchedTodos = todos.filter(todo => (
+    todo.text.toLowerCase().includes(searchValue.toLowerCase())
+    )
   );
+
+  /* opcion 2: explicado en el curso */
+  // const searchedTodos = todos.filter(
+  //   (todo) => {
+  //     const todoText = todo.text.toLowerCase();
+  //     const searchText = searchValue.toLowerCase();
+  //     return todoText.includes(searchText);
+  //   }
+  // );
 
   console.log('Los usuarios buscan todos de ' + searchValue);
   
